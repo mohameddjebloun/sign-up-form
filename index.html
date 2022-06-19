@@ -25,18 +25,18 @@
                 <h3>Let's do this!</h3>
                 <fieldset>
                     <div>
-                        <label for="firstName">FIRST NAME</label>
-                        <input type="text" name="firstName" id="firstName" placeholder="Mohamed">
+                        <label for="firstName">*FIRST NAME</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="Mohamed" required>
                     </div>
                     <div>
-                        <label for="lastName">LAST NAME</label>
-                        <input type="text" name="lastName" id="lastName" placeholder="Djebloun">
+                        <label for="lastName">*LAST NAME</label>
+                        <input type="text" name="lastName" id="lastName" placeholder="Djebloun" required>
                     </div>
                 </fieldset>
                 <fieldset>
                     <div>
-                        <label for="email">EMAIL</label>
-                        <input type="email" name="email" id="email" placeholder="djeblounm@gmail.com">
+                        <label for="email">*EMAIL</label>
+                        <input type="email" name="email" id="email" placeholder="djeblounm@gmail.com" required>
                     </div>
                     <div>
                         <label for="phoneNumber">PHONE NUMBER</label>
@@ -45,17 +45,17 @@
                 </fieldset>
                 <fieldset>
                     <div>
-                        <label for="password">PASSWORD</label>
-                        <input type="password" name="password" id="password">
+                        <label for="password">*PASSWORD</label>
+                        <input type="password" name="password" id="password" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required>
                     </div>
                     <div>
-                        <label for="confirmPassword">CONFIRM PASSWORD</label>
-                        <input type="password" name="confirmPassword" id="confirmPassword">
+                        <label for="confirmPassword">*CONFIRM PASSWORD</label>
+                        <input type="password" name="confirmPassword" id="confirmPassword" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required>
                     </div>
                 </fieldset>
             </form>
             <button type="submit" form="myForm">Create Account</button>
-            <p>Already have an account ? <a href="#">Log in</a></p>
+            <p id="buttonAlternative">Already have an account ? <a href="#">Log in</a></p>
         </div>
     </div>
 </body>
