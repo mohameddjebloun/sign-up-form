@@ -9,6 +9,42 @@
     <title>Sign-up Form</title>
 </head>
 <body>
-    
+    <div class="pageContainer">
+        <div class="imageContainer">
+            <div class="logoContainer">
+                <img src="./images/odin-logo.png" alt="Lined odin logo">
+                <h1>ODIN</h1>
+            </div>
+        </div>
+        <div class="contentContainer">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize
+                your deepest dreams. Sign up now to get started.
+            </p>
+            <p>You know you want to.</p>
+            <form action="#" method="get" id="myForm">
+                <h3>Let's do this!</h3>
+                <fieldset>
+                    <label for="firstName">FIRST NAME</label>
+                    <input type="text" name="firstName" id="firstName" placeholder="Mohamed">
+                    <label for="lastName">LAST NAME</label>
+                    <input type="text" name="lastName" id="lastName" placeholder="Djebloun">
+                </fieldset>
+                <fieldset>
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" id="email" placeholder="djeblounm@gmail.com">
+                    <label for="phoneNumber">PHONE NUMBER</label>
+                    <input type="tel" name="phonNumber" id="phoneNumber">
+                </fieldset>
+                <fieldset>
+                    <label for="password">PASSWORD</label>
+                    <input type="password" name="password" id="password">
+                    <label for="confirmPassword">CONFIRM PASSWORD</label>
+                    <input type="password" name="confirmPassword" id="confirmPassword">
+                </fieldset>
+            </form>
+            <button type="submit" form="myForm">Create Account</button>
+            <p>Already have an account ? <a href="#">Log in</a></p>
+        </div>
+    </div>
 </body>
 </html>
